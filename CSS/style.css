@@ -1,3 +1,4 @@
+/* Start Variable */
 :root {
     --main-color: #10cab7;
     --secondary-color: #2c4755;
@@ -5,7 +6,11 @@
     --section-background: #f6f6f6;
     --main-duration: 0.4s;
 }
-html{
+
+/* End Variable */
+
+/* Start Global Rules */
+html {
     scroll-behavior: smooth;
 }
 
@@ -19,10 +24,11 @@ html{
 
 body {
     font-family: 'Work Sans', sans-serif;
-    /* height: 3000px; */
 }
 
-/* My Classes */
+/* End Global Rules */
+
+/* Start Components */
 .special-heading {
     color: #ebeced;
     font-weight: 800px;
@@ -77,6 +83,8 @@ body {
     }
 }
 
+/* End Components */
+
 /* Start Header */
 
 header {
@@ -105,7 +113,6 @@ header .links {
 
 header .icon {
     width: 30px;
-    /* background-color: aqua; */
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -179,8 +186,6 @@ header .links ul a:hover {
     width: 100%;
     height: 100vh;
     background-size: cover;
-    /* height: calc(100vh - 60px); */
-    /* background-color: #2c4755; */
     position: relative;
     background-image: url(../Images/landing.jpg);
 }
@@ -271,7 +276,8 @@ header .links ul a:hover {
         flex-direction: column;
         text-align: center;
     }
-    .service-content{
+
+    .service-content {
         grid-gap: 0;
     }
 }
@@ -356,7 +362,6 @@ header .links ul a:hover {
     margin-top: 16px;
     color: #797979;
     line-height: 1.6;
-    /* margin-bottom: 0; */
 }
 
 /* End Section Four -portfolio- */
@@ -413,7 +418,6 @@ header .links ul a:hover {
 }
 
 .about .about-content p {
-    /* margin-bottom: 50px; */
     padding-top: 30px;
     line-height: 2;
 }
@@ -460,11 +464,6 @@ header .links ul a:hover {
     background-color: var(--section-background);
 }
 
-.contact .container {
-    /* position: relative; */
-
-}
-
 .contact .text {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
@@ -500,7 +499,8 @@ header .links ul a:hover {
     .contact .text .email {
         font-size: 25px;
     }
-    .contact .text p:nth-of-type(2){
+
+    .contact .text p:nth-of-type(2) {
         font-size: 15px;
     }
 }
@@ -515,10 +515,11 @@ footer {
     font-size: 18px;
 }
 
-footer p{
+footer p {
     color: #fff;
 }
-footer p span{
+
+footer p span {
     font-weight: bold;
     color: var(--main-color);
 }
